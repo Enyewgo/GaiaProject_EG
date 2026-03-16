@@ -1,0 +1,99 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "GaiaProject",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Calculator/history": {
+      "get": {
+        "tags": [
+          "Calculator"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Calculator/calculate": {
+      "get": {
+        "tags": [
+          "Calculator"
+        ],
+        "parameters": [
+          {
+            "name": "n1",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "n2",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "action",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "user",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Calculator/string-action": {
+      "get": {
+        "tags": [
+          "Calculator"
+        ],
+        "parameters": [
+          {
+            "name": "input",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "action",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { },
+  "tags": [
+    {
+      "name": "Calculator"
+    }
+  ]
+}

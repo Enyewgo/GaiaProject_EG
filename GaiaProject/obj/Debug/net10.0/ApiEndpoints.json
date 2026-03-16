@@ -1,0 +1,64 @@
+[
+  {
+    "ContainingType": "GaiaProject.Controllers.CalculatorController",
+    "Method": "Calculate",
+    "RelativePath": "api/Calculator/calculate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "n1",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "n2",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "action",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "user",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GaiaProject.Controllers.CalculatorController",
+    "Method": "GetHistory",
+    "RelativePath": "api/Calculator/history",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GaiaProject.Controllers.CalculatorController",
+    "Method": "ProcessText",
+    "RelativePath": "api/Calculator/string-action",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "action",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
