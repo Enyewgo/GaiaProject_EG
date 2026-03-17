@@ -1,0 +1,50 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  direction: rtl;
+}
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+}
+input,
+select {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+/* הכפתור המוזהב של E.G. */
+.gold-button {
+  background: linear-gradient(45deg, #daa520, #daa520);
+  color: black;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: 0.3s;
+}
+.gold-button:hover {
+  background: linear-gradient(45deg, #daa520, #ffd700);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(218, 165, 32, 0.4);
+}
+
+.result-area {
+  background: #fffde7;
+  padding: 15px;
+  border-radius: 10px;
+  border-right: 5px solid #ffd700;
+  margin-top: 20px;
+}

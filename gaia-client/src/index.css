@@ -1,0 +1,92 @@
+/* הגדרות משתנים - סעיף עיצוב מתקדם */
+:root {
+  --text: #9ca3af;
+  --text-h: #ffffff; /* לבן בוהק לכותרות */
+  --bg: #121212;    /* רקע כהה עמוק ויוקרתי */
+  --border: #2e303a;
+  --code-bg: #1f2028;
+  --accent: #ffd700; /* הזהב של E.G. */
+  --accent-bg: rgba(255, 215, 0, 0.1);
+  --accent-border: rgba(255, 215, 0, 0.5);
+  --shadow: rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+
+  --sans: 'Segoe UI', system-ui, Roboto, sans-serif;
+  --heading: 'Segoe UI', system-ui, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* התאמה למסכים קטנים - רספונסיביות */
+@media (max-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+/* סעיף: כותרת ראשית מעוצבת */
+h1 {
+  font-family: var(--heading);
+  font-weight: 700;
+  color: var(--accent); /* צבע זהב */
+  font-size: 56px;
+  letter-spacing: 0px; /* תיקון לעברית - מונע דחיסות של אותיות */
+  margin: 32px 0;
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.3); /* הילה מוזהבת */
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+
+h2, h3 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+  margin-bottom: 15px;
+}
+
+/* עיצוב כללי לאלמנטים של קוד או תוצאה */
+code, .counter {
+  font-family: var(--mono);
+  font-size: 15px;
+  padding: 4px 8px;
+  background: var(--code-bg);
+  border-radius: 4px;
+  color: var(--accent);
+}
+
+/* הסרת שאריות של תבנית Vite המקורית כדי לשמור על קוד נקי */
+button:focus,
+button:focus-visible {
+  outline: 4px auto var(--accent);
+}
