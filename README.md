@@ -1,14 +1,17 @@
-# 🌍 GaiaProject - Full Stack Calculator & Text Processor
+#  GaiaProject - Full Stack Calculator & Text Processor
+
+</p><img width="389" height="953" alt="screenshot" src="https://github.com/user-attachments/assets/8043fd30-785d-484f-b4fa-0729bac6bc4a" />
+
 
 **Developer:** E.G. - Software Practical Engineer
 **Tech Stack:** React (Frontend) | .NET 8 Web API (Backend) | SQL Server (Database)
 
 ---
 
-## 📖 About the Project
+##  About the Project
 **Gaia Project** is a comprehensive **Full-Stack** application that features a smart calculator and a text processing engine. This project demonstrates end-to-end development capabilities: from a dynamic User Interface in the browser to server-side logic in C#, and persistent data storage in a relational database.
 
-## 🏗️ System Architecture
+##  System Architecture
 
 The project follows an **N-Tier Architecture** to ensure clean code and Separation of Concerns:
 
@@ -29,7 +32,7 @@ The project follows an **N-Tier Architecture** to ensure clean code and Separati
 
 ---
 
-## 🛠️ Setup and Installation
+##  Setup and Installation
 
 1. **Database:**
    - Update the `Connection String` in `appsettings.json` to point to your local SQL Server.
@@ -45,7 +48,8 @@ The project follows an **N-Tier Architecture** to ensure clean code and Separati
 
 ---
 
-## 💡 Professional Highlights
+
+ Professional Highlights
 * **Separation of Concerns:** Distinct boundaries between UI, Logic, and Data.
 * **Asynchronous Programming:** Leveraging Async/Await to ensure non-blocking server performance.
 * **Clean Code:** Adhering to naming conventions, structured classes, and readable code practices.
