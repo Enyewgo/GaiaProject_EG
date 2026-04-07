@@ -16,7 +16,7 @@ function App() {
   const loadHistory = async () => {
     try {
       const response = await fetch(
-        "https://localhost:7235/api/Calculator/history",
+        "http://localhost:5000/api/Calculator/history",
       );
       const data = await response.json();
       setHistory(data);
@@ -31,7 +31,7 @@ function App() {
 
   const runMath = async () => {
     const response = await fetch(
-      `https://localhost:7235/api/Calculator/calculate?n1=${num1}&n2=${num2}&action=${mathAction}&user=${userName}`,
+      `http://localhost:5000/api/Calculator/calculate?n1=${num1}&n2=${num2}&action=${mathAction}&user=${userName}`,
     );
     const data = await response.json();
     setResult(data);
@@ -40,7 +40,7 @@ function App() {
 
   const runText = async () => {
     const response = await fetch(
-      `https://localhost:7235/api/Calculator/string-action?input=${textInput}&action=${textAction}&user=${userName}`,
+      `http://localhost:5000/api/Calculator/string-action?input=${textInput}&action=${textAction}&user=${userName}`,
     );
     const data = await response.json();
     setResult(data);
